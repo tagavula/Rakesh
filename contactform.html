@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Form </title>
+    <h1 style="color:rgb(119, 23, 23)"> Contact Information </h1>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        #label{
+            color: black;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        .input{
+            border-radius: 6%;
+            border-color: blanchedalmond;
+            text-shadow: 6%;
+            text-decoration: solid;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="get"> 
+    <table id="label" class="input">
+        <thead>
+            <tbody>
+                <tr>
+                    <td> <label for="name"> Name: </label></td>
+                    <td> <input type="text" name="name" id="name" required> </td>
+                </tr>
+                <tr>
+                    <td> <label for="email"> Email: </label></td>
+                    <td> <input type="email" name="email" id="email" required> </td>
+                </tr>
+                <tr>
+                    <td> <label for="Phone"> Contact No: </label> </td>
+                    <td> <input type="tel" name="Phone" id="Phone" minlength="10" maxlength="10" required> </td>
+                </tr>
+                <tr>
+                    <td> <label for="gender"> Gender: </label> </td>
+                    <td> <select name="gender" id="gender">
+                        <option value="select" selected> Select </option>
+                        <option value="Male"> Male </option>
+                        <option value="Female"> Female </option>
+                    </select>    
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="profession"> Profession </label></td>
+                    <td> <select name="profession" id="profession">
+                        <option value="select" selected> Select </option>
+                        <option value="Teaching"> Teaching </option>
+                        <option value="Software"> Software </option>
+                        <option value="Public Servant"> Public Servant </option>
+                        <option value="Bussiness"> Bussiness </option>
+                        <option value="Unemployed"> Unemployed </option>
+                    </select></td>
+                </tr>
+                <tr style="text-align: left; vertical-align: top;">
+                    <td> <label for="message"> Message </label>   </td>
+                    <td> <textarea name="message" id="message" cols="28" rows="10" required> </textarea> </td>
+                </tr>
+                <tr>
+                    
+                    <td style="align-items: end;" colspan="2"> 
+                        <input type="checkbox" name="tnc" id="tnc" required> 
+                     <label for="tnc"> I Accept the terms and conditions </label></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"> <button type="submit"> Submit </button> </td>
+                    <td style="text-align: right;"> <button type="reset"> Reset </button></td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+    </form>
+</body>
+</html>

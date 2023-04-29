@@ -1,0 +1,17 @@
+body{
+    background-color:bisque;
+    align-items: center;
+    text-shadow: 0cqi;
+    
+}
+th{
+    text-align:center;
+    text-decoration: solid;
+    text-shadow: 0cqb;
+    scroll-snap-align:calc();
+}
+ul{
+    
+    font-style: italic;
+    
+}

@@ -1,0 +1,28 @@
+label{
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color:crimson;
+    align-items:end;
+}
+body{
+    background-color: bisque;
+    background-blend-mode: color;
+}
+input{
+    padding: 8px;
+    border-radius: 8%;
+    border-color: aliceblue;
+    
+}
+div{
+    padding: 7px;
+}
+button{
+    font-size: medium;
+    text-align: left;
+    padding-inline-start: 4%;
+}
+select{
+    display: block;
+}

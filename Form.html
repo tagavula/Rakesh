@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration Form </title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+    <h1 style="background-color: crimson; text-align: center;"> Registration Form </h1>
+<body style="background-color: blanchedalmond;">
+    <form action="./semantics.html" method="get">
+            <div align="center">
+                <label for="username"> First Name </label>
+                <input type="text" name="username" id="username" placeholder="Enter the Firstname" minlength="4" maxlength="20">
+            </div>
+            <div align="center">
+                <label for="lastname"> Last Name </label>
+                <input type="Enter the lastname" id="lastname" placeholder="Enter the Lastname" minlength="4" maxlength="20">
+            </div>
+            <div align="center">
+                <label for="password"> Password </label>
+                <input type="password" id="password" placeholder="Password should be AlphaNumeric" minlength="8" maxlength="20">
+            </div>
+            <div align="center">
+                <label for="password"> Confirm Password </label>
+                <input type="password" id="password" placeholder="Both the password and confirm password should be the same:" minlength="8" maxlength="20">
+            </div>
+            <div align="center">
+                <label for="number"> Age </label>
+                <input type="number" name="Age" id="Age" min="18" max="60" placeholder="Enter not less than 18 as well greater than 60">
+            </div>
+            <div align="center">  
+                <label for="date"> Date </label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div align="center">
+                <label for="gender"> Please Select the Gender </label>
+                <select name="gender" id="gender">
+                    <option value="select" selected> Select </option>
+                    <option value="gender"> Male </option>
+                    <option value="gender"> Female </option>
+                </select>
+            </div>
+            <div align="center">
+                <label for="email"> Email </label>
+
+                <input type="Enter the Email" id="email" placeholder="Enter the mail Id">
+                <select name="mail" id="mail"> 
+                    <option value="select" selected> Select </option>
+                    <option value="mail"> @gmail.com </option>
+                    <option value="mail"> @hotmail.com </option>
+                    <option value="mail"> @yahoomail.com </option>
+                    <option value="mail"> @rediffmail.com </option>
+                    
+                </select> 
+
+            </div>
+            <div align="center">
+                <label for="fruit">  Select the Favorite Fruit </label>
+                <input type="text" name="fruit" id="fruit" list="fruits" placeholder="Please Select the fruit">
+                <datalist id="fruits">
+                    <option value="select" selected></option>
+                    <option value="Apple"></option>
+                    <option value="Pomegrenate"></option>
+                    <option value="Kiwi"></option>
+                    <option value="Banana"></option>
+                    <option value="Suppota"></option>
+                    <option value="CustardApple"></option>
+                    <option value="Mango"></option>
+                    <option value="cherry"></option>
+                </datalist>
+                
+            </div>
+            <div align="center">
+                <label for="color"> Choose the Favorite color</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <div align="center">
+                <label for="about" align="center"> About me </label>
+                <textarea name="about" id="about" cols="30" rows="20" 
+                style="vertical-align: text-top;" placeholder= "I am Rakesh...;" 
+                minlength="50" maxlength="200">
+                
+                
+
+                </textarea>
+            </div>
+
+            <div>
+                
+            </div>
+
+            <div align="center">
+                <button type="submit" style="background-color: darkcyan; font-size: medium; font-family: 'Times New Roman', Times, serif;"> 
+                    <img src="https://unsplash.it/16/16" alt=""> Submit
+                
+                </button>
+
+                <button type="reset" style="background-color: coral; font-size: medium; font-family: 'Times New Roman', Times, serif;">
+                    <img src="https://unsplash.it/16/16" alt=""> Clear
+                </button> <br>
+            </div>
+            
+    </form>
+</body>
+</html>

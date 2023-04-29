@@ -1,0 +1,25 @@
+body{
+    background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    color:blanchedalmond
+    line: height 1.6em;
+}
+img{
+    border-radius: 10%;
+}
+h1{
+    border-radius: 5%;
+}
+*{
+    box-sizing: border-box;
+    padding: 0.5%;
+    margin: 0.5%;
+}
+.a{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-items:center;
+}

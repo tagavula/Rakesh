@@ -1,0 +1,25 @@
+body{
+    
+    background-color: rgba(104, 163, 163, 0.356);
+    background-image: image(){
+        let background-attachment: fixed;
+    }
+}
+button{
+    text-align: center;
+    border-color: darkgray;
+}
+input{
+    padding: 4%;
+    border-radius: 5%;
+}
+textarea{
+    padding: 4%;
+    border-radius: 5%;
+}
+form{
+    background-position: 5%;
+}
+table{
+    
+}
