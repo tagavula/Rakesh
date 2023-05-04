@@ -1,0 +1,26 @@
+a:link {
+    color: rgb(216, 15, 15);
+}
+
+a:visited {
+    color: purple;
+}
+
+a:active {
+    color: orange;
+}
+
+a:hover {
+    background-color: blue;
+}
+
+
+
+.container:hover {
+    background-color: crimson;
+}
+
+.container:active {
+    background-color:cornflowerblue;
+    
+}

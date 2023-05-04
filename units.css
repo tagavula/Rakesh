@@ -1,0 +1,39 @@
+.myText0 {
+    padding: 24px;
+    font-size: 1cm;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200px;
+    padding-left: 5%;
+    padding-top: 1%;
+    background-color: blanchedalmond;
+    border: 5px solid black;
+}
+
+.myText1 {
+    padding: 24px;
+    font-size: 1.2cm;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200px;
+    padding-left: 5%;
+    padding-top: 1%;
+    background-color: burlywood;
+    border: 5px solid black;
+}
+
+.myText2 {
+    padding: 18px 24px 18px 24px;
+    font-size: 1.4cm;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200px;
+    background-color: cornsilk;
+    border: 5px solid black;
+    margin: 12px 24px 36px 48px;
+    border-top: 5px solid red;
+    border-bottom: 10px solid green;
+    border-right: 15px solid orange;
+    border-left: 20px solid purple;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+}

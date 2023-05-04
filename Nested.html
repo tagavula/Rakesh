@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nested Document </title>
+    <style>
+            /* div h1{
+                color:brown;
+            } */
+            .container .readText{
+                color:rgb(2, 29, 22);
+            }
+
+            .container .myText1{
+                color:rgb(90, 202, 174);
+                font-size: 1.5em;
+                font-style: italic;
+                background-color: azure;
+                background-image: url(./Images/lake-1802337__340.jpg);
+                background-size: cover;
+            }
+
+            .container .myText2{
+                color:rgba(173, 166, 167, 0.616);
+                font-size: 1.5em;
+                font-style: italic;
+                background-color: rgb(223, 223, 210);
+                background-image: url(./Images/garden.jpeg);
+                background-size: cover;
+            }
+
+            .myFooter{
+                color:chocolate;
+            }
+
+            body{
+                background-color: rgb(202, 162, 112);
+                padding-left: 2%;
+                padding-top: 2%;
+                padding-bottom: 2%;
+                padding-right: 2%;
+                background-image: url(./Images/lake-1802337__340.jpg);
+                background-size: cover;
+                /* height: 10px;
+                width: 10px; */
+            }
+            .container .myInput{
+                
+                width:600px;
+                height:25px;
+                border-radius: 4%;
+                border: 2px solid green;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="myText0">
+            <h1 id="myHeader" class="readText"> Nested HTML </h1>
+        </div>
+        <div class="myText1">
+
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Aperiam, molestias perferendis dicta repellat ipsam recusandae aut numquam alias, 
+            veritatis culpa fuga nam aliquid minus quisquam doloribus voluptate odio quam inventore!
+
+        </div>
+        <div class="myText2">
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sunt a corrupti, numquam, pariatur cupiditate dignissimos autem 
+            odio sed quo nostrum quibusdam corporis amet excepturi harum aliquam. 
+            Eum dolor quis ipsum.
+
+        </div>
+        <div>
+            <input type="text" name="username" id="username" class="myInput">
+        </div>
+    </div>
+
+    <h1 class="myFooter">
+            Rakesh Address.
+    </h1>
+    
+</body>
+</html>

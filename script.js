@@ -44,16 +44,15 @@
 // const child=document.querySelector('.child');
 // child.parentElement.style.border='2px solid red';
 
-const city=new arr['hyderabad','Delhi','pune','mumbai','chennai','Bangalore','Delhi','Delhi'];
-let count=0;
-for(int i=0;i<=arr.length;i++)
-{
-    if(count[i]>=2)
-    {
-        console.log(arr[i]);
-    }
-        count++;
-}
+// 
+
+const itemForm = document.getElementById('item-form');
+const itemInput = document.getElementById('item-input');
+const itemList = document.getElementById('item-list');
+const clearBtn = document.getElementById('clear');
+const itemFilter = document.getElementById('filter');
+const formBtn = itemForm.querySelector('button');
+let isEditMode = false;
 
 
 
