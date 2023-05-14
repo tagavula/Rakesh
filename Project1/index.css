@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+:root {
+    
+    font-family: 'Ubuntu';
+    max-height: 100vh;
+    max-width: 1280px;
+    background-color: bisque;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0px, !important;
+    background-color: white;
+    border: 1px solid grey;
+
+}
+
+.container {
+
+}
+
+.nav  {
+
+}
+
+.title {
+
+}
+
+.logo {
+
+}
+
+nav {
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+nav .logo img  {
+    width: 56px;
+    height: 56px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+nav .logo .title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+nav ul li {
+    color: white;
+    padding: 22px 40px;
+    background-color: rgb(88, 82, 82);
+}
+
+nav ul li:hover {
+    background-color: rgb(43, 40, 36);
+}
+
+nav ul li.active {
+    background-color: rgb(41, 23, 23);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Tables   */
+@media all and (max-width: 800px) {
+    nav {
+        justify-content: flex-start
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+}
+
+/* Phones */
+@media all and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        width: 100%;
+    }
+    nav ul li {
+        text-align: center;
+    }
+
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    color: White;
+    background-image: url('./pexels-irina-iriser-1379640.jpg');
+    background-size: cover;
+    background-color: yellowgreen;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0.0;
+        top: -100px;
+    }
+
+    to {
+        opacity: 1.0;
+        top: 0.0;
+    }
+}
+.banner .heading {
+    flex: 1;
+    justify-self: center;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    animation: appear 1s ease-in-out 0s forwards;
+}
+
+.Dhamma {
+    font-size: 18px;
+    padding: 12px;
+}
+.subText {
+    display: flex;
+    
+}
+.subText div{
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.subText .red {
+    background-color: red;
+}
+.subText .yellow {
+    background-color: yellowgreen;
+}
+.subText .green {
+    background-color: green;
+}
+.subText h1 {
+    text-align: center;
+}
+.quote  {
+    display: block;
+    background-color: grey;
+    padding: 50px;
+    text-align: center;
+    font-style: italic;
+}
+.quote::before {
+    display: inline-block;
+    content: open-quote;
+    color:rgb(88, 82, 82);
+    font-size: 32px;
+}
+
+.quote::after {
+    display: inline-block;
+    content: close-quote;
+    color:rgb(88, 82, 82);
+    font-size: 32px;
+}
+/* Projects */
+h3.title {
+    text-align: center;
+    font-size: 24px;
+    padding: 12px;
+    margin: 6px;
+    border-top: 5px solid rgb(100, 100, 134);
+    border-bottom: 5px solid rgb(158, 140, 96);
+}
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project {
+    flex-basis: 350px;
+    box-sizing: border-box;
+    box-shadow:darkgreen;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+img {
+    align-items: center;
+    position: relative;
+}
+.project h4 {
+    text-align: center;
+    font-size: 24px;
+    padding: 12px;
+    margin: 6px;
+    border-top: 5px solid rgb(100, 100, 134);
+    border-bottom: 5px solid rgb(158, 140, 96);
+}
+.project p {
+    padding: 0px 12px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.project img:hover  {
+    transform: scale(0.95);
+    opacity: 0.5;
+}
+.project button    {
+    background-color: rgb(87, 151, 87);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 22px;
+    font-family: 'Ubuntu';
+    align-content: end;
+}
+.project button:hover {
+    background-color: green;
+}
+
+/* Gallery */
+.gallery    {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 8px;
+    padding: 12px;
+}
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    transition: all 0.25s ease-in;
+}
+.gallery-item:hover {
+    transform: scale(0.90);
+    opacity: none;
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-item-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.gallery-item-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.gallery-item-3 {
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+}
+.gallery-item-4 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+}
+.gallery-item-5 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+.gallery-item-6 {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
+.gallery-item-7 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.gallery-item-8 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.gallery-item-9 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.gallery-item-10 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.gallery-item-11 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.gallery-item-12 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+/* Contact */
+
+.container1 {
+    display: flex;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    margin: 10px 0px;
+    
+}
+
+.container1 form {
+    flex: 1;
+}
+
+input[type=text], select, textarea {
+    width:100%;
+    padding: 12px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    height: 50px;
+}
+
+input[type=submit] {
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type=submit]:hover {
+    background-color: green;
+}
+.container1 .map {
+    padding: 12px;
+    margin-left: 20px;
+    flex: 1;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(165, 103, 103);
+    color: white;
+    text-align: center;
+    padding: 24px;
+}
